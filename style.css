@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-main: hsl(217, 54%, 11%);
+    --bg-card: hsl(216, 50%, 16%);
+    --bg-line: hsl(215, 32%, 27%);
+    --bg-white: hsl(0,0%,100%);
+
+    --clr-softBlue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+
+    --ff: 'Outfit', 'sans-serif';
+    --fw-sm: 300;
+    --fw-md: 400;
+    --fw-lg: 600;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 320px;
+    border-radius: 12px;
+    gap: 1rem;
+}
+
+img[class="main-image"] {
+    border-radius: 12px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.pricing span {
+    flex: 1;
+}
+
+.card > p, .card > div span:nth-child(2) {
+    color: var(--clr-softBlue);
+}
+
+.card > div span:nth-child(1) {
+    color: var(--clr-cyan);
+}
+
+.card > div span:nth-child(2) {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid var(--bg-line);
+}
+
+.avatar {
+    border-radius: 32px;
+    border: 1px solid var(--bg-white);
+}
+
+.attribution {
+    font-size: 0.75rem;
+}
+
+body {
+    font-family: var(--ff);
+    background: var(--bg-main);
+    color: var(--bg-white);
+}
